@@ -1,0 +1,37 @@
+♦ Project name: To-do-list Application 
+♦ Description:  It is a complete "react and node" app with its frontend and backend and node-persist
+as its persistant storage.
+
+----------------------------------------------------------------------------------------------
+♦ Project sturcture: 
+The project is divided into two parts : 
+• Backend 
+• Frontend 
+
+---------------------------------------------------------------------------------------------------
+♦ Backend : It contains an express server, node-persist storage and Two RESTful API for listening 
+GET and POST requests.
+
+• "express.json()" method has been used to parse the "JSON" data obtained from the "req.body"
+• "generateUniqueId" function for generating unique key and using it to store the date into the storage.
+
+• POST API : It contains functionality to 
+1. access the data in the "req.body",
+2. setting the data into the persistant storage,
+3. handling errors obtained from the browser and
+4. the sending a response accordingly.
+
+• GET API : It constains functionality to 
+1. handling errors and 
+2. fetching all tasks from the storage and 
+3. sending it as a response.
+
+----------------------------------------------------------------------------------------------
+♦ Important observations/findings
+
+• Not including paranthesis with "express.json()" middleware prohibits the browser to get to any 
+route handlers and make the browser waiting forever.
+• To store the task(data) into the storage "a unique key" is required and the unique key could be 
+a "time-stamp" in string format using "Date()" and ".tostringfy()" method.
+
+
